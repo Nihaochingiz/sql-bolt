@@ -12,3 +12,7 @@ SELECT * FROM movies WHERE Director LIKE "%John Lasseter%";
 /*Find all the movies (and director) not directed by John Lasseter*/
 
 SELECT title,director FROM movies WHERE Director NOT LIKE "%John Lasseter%";
+
+/*Find all the WALL-* movies*/
+
+SELECT * FROM movies WHERE title LIKE "%WALL-%";
