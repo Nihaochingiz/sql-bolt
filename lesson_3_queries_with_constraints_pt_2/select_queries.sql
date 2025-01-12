@@ -8,3 +8,7 @@ SELECT * FROM movies WHERE title LIKE "%Toy%";
 /*Find all the movies directed by John Lasseter*/
 
 SELECT * FROM movies WHERE Director LIKE "%John Lasseter%";
+
+/*Find all the movies (and director) not directed by John Lasseter*/
+
+SELECT title,director FROM movies WHERE Director NOT LIKE "%John Lasseter%";
