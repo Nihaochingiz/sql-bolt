@@ -21,3 +21,18 @@ WHERE
     country = 'United States'
 ORDER BY
     latitude DESC;
+
+/*
+List all the cities west of Chicago, ordered from west to east
+ */
+SELECT
+    city,
+    longitude
+FROM
+    north_american_cities
+WHERE
+    longitude < -87.629798
+ORDER BY
+    longitude ASC;
+
+
