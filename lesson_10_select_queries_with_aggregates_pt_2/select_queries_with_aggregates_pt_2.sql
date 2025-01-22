@@ -18,7 +18,7 @@ GROUP BY
 
 /*Find the total number of years employed by all Engineers*/
 SELECT
-    SUM(years_employed)
+   SELECT DISTINCT director
 FROM
     employees
 WHERE
